@@ -1,0 +1,38 @@
+//Button
+.button {
+    background-color: $nickel;
+    border-radius: 50px;
+    color: $white;
+    padding: auto;
+    font-family: $roboto;
+    font-size: $medium;
+    padding: .7rem .7rem;
+    &:hover{
+        background-color: $lightgray;
+    }
+    //button__medium
+    &__medium{
+        margin-left: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    //button__small
+    &__small{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    //button__container
+    &__container{
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
+//Media Query button
+@media only screen and (max-width: 600px) {
+    .button{
+        &__medium{
+            margin-top: 2%!important;
+        }
+    }
+}
+

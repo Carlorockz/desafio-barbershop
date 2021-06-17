@@ -1,0 +1,43 @@
+//Pagination
+
+//pages-navigation
+.pages-navigation{
+    background-color: $platinum;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+    font-size: $medium;
+}
+//pagination
+.pagination{
+    justify-content: center;
+    margin-bottom: 0;
+}
+//page-link
+.page-link{
+    color: $raisinblack;
+    &:hover{
+        background-color: $raisinblack;
+        color: $white;
+    }
+    &:focus{
+        color: $eerieblack;
+    }
+}
+.page-link.active{
+    background-color: $nickel;
+    color: $white;
+    &:hover{
+        background-color: $raisinblack;
+    }
+}
+//page-item
+.page-item:last-child .page-link{
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+.page-item:first-child .page-link{
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}

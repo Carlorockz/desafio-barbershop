@@ -1,0 +1,13 @@
+//Base Styles
+body{
+    background-color: $white;
+}
+
+//Base Typography
+h2, h3, h4, h5, h6, p, a, li{
+    font-family: $roboto;
+}
+h1{
+    font-family: $playfair;
+    font-style: italic;
+}

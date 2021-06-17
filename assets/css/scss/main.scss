@@ -1,0 +1,20 @@
+//abstracts
+@import 'abstracts/variables';
+//vendors
+@import 'vendors/bootstrap/bootstrap';
+//base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography.scss';
+//layout
+@import 'layout/header';
+@import'layout/footer';
+@import 'layout/navigation';
+//components
+@import 'components/pagination';
+@import 'components/buttons';
+//pages
+@import 'pages/index.scss'
+//themes
+
+

@@ -1,0 +1,12 @@
+// Navigation
+#navigation{
+    font-family: $roboto;
+}
+.nav-link{
+    &:hover{
+        color: $ruddypink!important;
+    }
+}
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active{
+    color: $ruddypink;
+}

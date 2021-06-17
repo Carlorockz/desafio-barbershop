@@ -1,0 +1,134 @@
+//document Section
+.document{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    //document__date
+    &__date{
+        font-family: $playfair;
+        font-size: $medium;
+        margin-bottom: 2.5rem;
+    }
+    //document__text
+    &__text{
+        line-height: 3;
+        font-size: $medium;
+    }
+}
+//aboutme section
+.aboutme{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    line-height: 1.6;
+    //aboutme__container
+    &__container{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    //aboutme__col 
+    &__col{
+        margin: auto;
+    }
+    //aboutme__image
+    &__image{
+        border-radius: 200px;
+        max-width: 80%;
+        border-color: $nickel;
+        border: 0.1px solid;
+    }
+    //aboutme__link
+    &__link{
+        color: $fuzzywuzzy;
+        font-size: $medium;
+        text-decoration: none;
+        &:hover{
+            color: $spanishpink;
+        }
+    }
+    //aboutme__paragraph
+    &__paragraph{
+        font-size: $medium;
+    }
+    //aboutme__title
+    &__title{
+        font-family: $playfair;
+        font-size: $large;
+    }
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+//main section
+.main{
+    margin:0;
+    padding: 0;
+    align-items: center;
+    //main__title
+    &__title{
+        font-size: $xx-large;
+        position: absolute;
+        color: $white;
+        top: 35%;
+        font-family: $playfair;
+        font-weight: $blackbold;
+        left: 20vw;
+        right: 20vw;
+        text-align: center;
+        box-sizing: border-box;
+        font-style: $italic;
+
+    }
+    //main__image
+    &__image{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+}
+//icon
+i{
+    color: $white;
+    background-color: blue;
+    position: absolute;
+    bottom: 20%;
+    left: 50vw;
+    right: 50vw;
+    font-size: 3rem;
+}
+//span
+span{
+    color: $fuzzywuzzy;
+}
+//Media Query
+@media only screen and (max-width: 600px) {
+    //Media aboutme
+    .aboutme{
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        &__paragraph{
+            display: none;
+        }
+    }
+    //aboutme__container
+    .button__container{
+        text-align: center;
+    }
+    //aboutme__document
+    .document{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    //main__title
+    .main__title{
+        font-size: $x-large;
+    }
+    //aboutme
+    .aboutme{
+        &__title{
+            margin-top: 5%;
+        }
+    }
+}
